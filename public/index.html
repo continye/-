@@ -1,0 +1,35 @@
+<!--
+ * @Author: hukai huzhengen@gmail.com
+ * @Date: 2024-09-05 09:00:11
+ * @LastEditors: hukai huzhengen@gmail.com
+ * @LastEditTime: 2024-09-05 15:31:01
+ * @FilePath: \baidu\public\index.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- 百度密钥 -->
+    <script type="text/javascript" src="//api.map.baidu.com/getscript?type=webgl&v=1.0&ak=你的密钥"></script>
+<!-- 高德密钥 -->
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&key=你的密钥"></script> 
+<script type="text/javascript">
+  window._AMapSecurityConfig = {
+       securityJsCode: '你的密钥', //所申请的安全密钥 注意这是安全密钥而不是key
+  }
+</script>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
